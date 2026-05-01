@@ -1,0 +1,159 @@
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+
+:root {
+  --app-bg: #f6f8fb;
+  --surface: #ffffff;
+  --app-text: #162033;
+  --muted-text: #5f6f86;
+  --app-border: #d9e2ef;
+  --accent: #2563eb;
+  --accent-strong: #1647a8;
+  --soft-accent: #e9f0ff;
+  --ring-active: #21b6ff;
+  --ring-track: #d9e2ef;
+  --timer-text: #0f172a;
+  --success: #0f8a5f;
+  --danger: #b42318;
+}
+
+:root.dark-theme {
+  --app-bg: #07090d;
+  --surface: #0f141d;
+  --app-text: #ffffff;
+  --muted-text: #d8e4f2;
+  --app-border: #314153;
+  --accent: #61f3ff;
+  --accent-strong: #ffffff;
+  --soft-accent: #16313b;
+  --ring-active: #72fff1;
+  --ring-track: #26303b;
+  --timer-text: #ffffff;
+  --success: #57d19a;
+  --danger: #ffb5ad;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family: Inter, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.mat-mdc-card {
+  --mdc-elevated-card-container-shape: 0.5rem;
+}
+
+.mat-mdc-snack-bar-container.timer-snackbar {
+  --mdc-snackbar-container-color: var(--surface);
+  --mdc-snackbar-supporting-text-color: var(--app-text);
+  --mat-snack-bar-button-color: var(--accent);
+}
+
+.dark-theme {
+  color: #ffffff;
+}
+
+.dark-theme .mat-mdc-card,
+.dark-theme .mat-mdc-menu-panel,
+.dark-theme .mat-mdc-menu-content,
+.dark-theme .mat-mdc-form-field,
+.dark-theme .mat-mdc-slide-toggle,
+.dark-theme .mat-mdc-button,
+.dark-theme .mat-mdc-outlined-button,
+.dark-theme .mat-mdc-unelevated-button,
+.dark-theme .mat-mdc-icon-button {
+  color: #ffffff;
+}
+
+.dark-theme .mat-mdc-menu-panel {
+  background: var(--surface);
+}
+
+.dark-theme .mat-mdc-form-field {
+  --mdc-outlined-text-field-input-text-color: #ffffff;
+  --mdc-outlined-text-field-label-text-color: #d8e4f2;
+  --mdc-outlined-text-field-disabled-label-text-color: #ffffff;
+  --mdc-outlined-text-field-disabled-input-text-color: #ffffff;
+  --mdc-outlined-text-field-hover-label-text-color: #ffffff;
+  --mdc-outlined-text-field-focus-label-text-color: #ffffff;
+  --mdc-outlined-text-field-outline-color: #4c6179;
+  --mdc-outlined-text-field-disabled-outline-color: #4c6179;
+  --mdc-outlined-text-field-hover-outline-color: #83f7ff;
+  --mdc-outlined-text-field-focus-outline-color: #83f7ff;
+  --mat-form-field-subscript-text-color: #d8e4f2;
+  --mat-form-field-container-text-color: #ffffff;
+  --mat-form-field-filled-label-text-color: #ffffff;
+  --mat-form-field-outlined-label-text-color: #ffffff;
+}
+
+.dark-theme .mat-mdc-form-field label,
+.dark-theme .mat-mdc-form-field .mat-mdc-floating-label,
+.dark-theme .mat-mdc-form-field .mdc-floating-label,
+.dark-theme .mat-mdc-form-field .mdc-floating-label--float-above,
+.dark-theme .mat-mdc-form-field .mdc-floating-label span,
+.dark-theme .mat-mdc-form-field .mat-mdc-floating-label span,
+.dark-theme .mat-mdc-form-field .mat-mdc-form-field-required-marker,
+.dark-theme .mat-mdc-form-field .mat-mdc-input-element,
+.dark-theme .mat-mdc-form-field .mat-mdc-form-field-hint,
+.dark-theme .mat-mdc-form-field .mat-mdc-form-field-hint-wrapper,
+.dark-theme .mat-mdc-form-field .mat-mdc-form-field-text-suffix,
+.dark-theme .mat-mdc-form-field .mat-mdc-form-field-text-prefix {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.dark-theme .mdc-text-field,
+.dark-theme .mdc-text-field--outlined,
+.dark-theme .mdc-text-field--disabled {
+  caret-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .mat-mdc-input-element,
+.dark-theme .mat-mdc-input-element:disabled {
+  caret-color: #ffffff !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.dark-theme .mat-mdc-form-field input::placeholder {
+  color: #d8e4f2;
+  opacity: 1;
+}
+
+.dark-theme .mdc-notched-outline__leading,
+.dark-theme .mdc-notched-outline__notch,
+.dark-theme .mdc-notched-outline__trailing {
+  border-color: #4c6179 !important;
+}
+
+.dark-theme .mat-mdc-form-field:hover .mdc-notched-outline__leading,
+.dark-theme .mat-mdc-form-field:hover .mdc-notched-outline__notch,
+.dark-theme .mat-mdc-form-field:hover .mdc-notched-outline__trailing,
+.dark-theme .mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
+.dark-theme .mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
+.dark-theme .mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
+  border-color: #83f7ff !important;
+}
+
+.dark-theme .mat-mdc-slide-toggle {
+  --mat-slide-toggle-label-text-color: #ffffff;
+}
+
+.dark-theme .mat-mdc-slide-toggle .mdc-label {
+  color: #ffffff;
+}
